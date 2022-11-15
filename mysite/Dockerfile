@@ -9,7 +9,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
-COPY . .
+COPY \oblig5 .
 
 RUN python3 manage.py makemigrations mysite
 RUN python3 manage.py migrate
