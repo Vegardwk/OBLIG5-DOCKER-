@@ -5,11 +5,11 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+COPY mysite/requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
-COPY . .
+COPY ./mysite .
 
 RUN python3 manage.py makemigrations mysite
 RUN python3 manage.py migrate
