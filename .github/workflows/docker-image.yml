@@ -34,3 +34,4 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/django-docker:latest
           #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+          #test
