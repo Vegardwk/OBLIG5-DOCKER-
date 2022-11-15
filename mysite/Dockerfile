@@ -3,7 +3,7 @@ FROM python:3.11-rc-bullseye
 
 ENV PYTHONUNBUFFERED 1
 
-WORKDIR /OBLIG5
+WORKDIR /app
 
 COPY requirements.txt requirements.txt
 
